@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S.T.</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        div.block {
+            background-color: red;
+            width: 100px;
+            height: 60px;
+            border-radius: 10px;
+            border: 1px solid black;
+            text-align: center;
+            line-height: 60px;
+            color: white;
+            font-weight: bold;
+            position: relative;
+            animation: gogo 8s 2s infinite alternate;
+        }
+
+        @keyframes gogo {
+            0% {background-color: red; left:0px; top:0px;}
+            25% {background-color: orange; left:200px; top:0px; transform: rotateY(180deg);}
+            50% {background-color: violet; left:200px; top:200px; transform: rotateX(180deg);}
+            75% {background-color: green; left:0px; top:200px; transform: rotateZ(180deg);}
+            100% {background-color: blue; left:0px; top:0px; transform: rotateY(180deg);}
+        }
+
+       
+    </style>
+</head>
+<body>
+    <div class="all">
+        <div class="block">
+            <p>Go Go</p>
+        </div>
+    </div>
+</body>
+</html>
